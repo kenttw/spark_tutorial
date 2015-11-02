@@ -1,0 +1,763 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="verify-v1" content="IAHYK7vmrRk/KviiF+L04ShubFzyQ71KR7NERk1Km/Q=" >
+<META name="y_key" content="1d3ca36296b6703a">
+<meta name="msvalidate.01" content="65BDB355D02C416670B1099A28F087CF" />
+<meta name="majestic-site-verification" content="MJ12_529e78b6-6269-4f07-bdaa-4e87c553d6c2">
+<meta name="keywords" content="亞洲大學, 亞大, asia.edu.tw, Asia University, 大學,台灣大專院校,台灣大學推薦,台中大學院校,台灣大學排名,Taiwan colleges,Taiwan universities,top Taiwan colleges,top Taiwan universities" />
+<meta name="description" content="亞洲大學由蔡長海教授與林增連先生共同創辦，於2005年8月1日由「臺中健康暨管理學院」升格改名。本校校園建築典雅，綠草如茵，四季花開，舒懷暢意，有具羅馬競技場外表的體育館、宮殿外貌的行政大樓暨圖書館，以及安藤忠雄大師為本校興建的藝術館，已然成為中部新地標。展望未來，本校將在校訓「健康、關懷、創新、卓越」之導引下，全力朝國際化一流大學之建校目標邁進，持續為國家社會培育出一流的人才。" />
+<title>Asia University, Taiwan 歡迎光臨亞洲大學全球資訊網</title>
+<link rel="shortcut icon" href="http://www.asia.edu.tw/favicon.ico" type="images/vnd.microsoft.icon">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
+<link rel="stylesheet" href="colorbox.css" type="text/css" />
+<script type="text/javascript" src="js/sliderman.1.3.7.js"></script>
+<link rel="stylesheet" type="text/css" href="css/sliderman.css" />
+<link rel="stylesheet" href="web.css" type="text/css" />
+<script type="text/javascript" src="google-analytics.js"></script>
+</head>
+
+<!--
+<script type="text/javascript">
+	var mobiles = new Array
+			(
+				"midp", "j2me", "avant", "docomo", "novarra", "palmos", "palmsource",
+				"240x320", "opwv", "chtml", "pda", "windows ce", "mmp/",
+				"blackberry", "mib/", "symbian", "wireless", "nokia", "hand", "mobi",
+				"phone", "cdm", "up.b", "audio", "sie-", "sec-", "samsung", "htc",
+				"mot-", "mitsu", "sagem", "sony", "alcatel", "lg", "eric", "vx",
+				"NEC", "philips", "mmm", "xx", "panasonic", "sharp", "wap", "sch",
+				"rover", "pocket", "benq", "java", "pg", "vox", "amoi",
+				"bird", "compal", "kg", "voda", "sany", "kdd", "dbt", "sendo",
+				"sgh", "gradi", "jb", "dddi", "moto", "iphone", "android",
+				"iPod", "incognito", "webmate", "dream", "cupcake", "webos",
+				"s8000", "bada", "googlebot-mobile"
+			)
+ 
+ 
+	var ua = navigator.userAgent.toLowerCase();
+	var isMobile = false;
+	for (var i = 0; i < mobiles.length; i++) {
+		if (ua.indexOf(mobiles[i]) > 0) {
+			location.href="http://m.asia.edu.tw";
+			break;
+		}
+	}
+</script>
+-->
+
+<script type="text/javascript">
+function setCookie(c_name,value)   // c_name: cookie name, value: cookie value, expiredays: cookie 有效天數 
+{
+	expiredays=999;
+	var exdate=new Date()                        // 宣告 exdate
+	exdate.setDate(exdate.getDate()+expiredays)  // 將 exdate 設成今天加上過期天數
+	document.cookie=c_name+ "=" +escape(value)+  // 產生 cookie 內容  c_name=escape(value);expires=exdate
+	((expiredays==null) ? "" : ";expires="+exdate)
+}
+
+function getCookie(c_name)
+{
+   if (document.cookie.length>0)
+  {
+     var c_list = document.cookie.split("\;");
+	 for ( i in c_list )
+	 {
+	     var cook = c_list[i].split("=");
+		 if ( cook[0] == c_name )
+		 {
+		     return unescape(cook[1]);
+		}
+	} 
+  }
+  return null
+}
+
+function checkCookie()
+{
+	lang=getCookie('lang');
+  url=getCookie('keep');
+  if (url!=null) {
+    //location.href=url;
+		//window.open(url);
+  }
+}
+
+function goto(url){
+	lang="";
+	for(i=0;i<3;i++){
+		if(document.form1["lang"][i].checked){lang=document.form1["lang"][i].value;}
+	}
+	
+	if(url=="http://web.asia.edu.tw"){
+		url="http://web.asia.edu.tw/bin/home.php?Lang=zh-TW";
+		if(lang=="gb"){url="http://web.asia.edu.tw/bin/home.php?Lang=zh-cn";}
+		if(lang=="en"){url="http://web.asia.edu.tw/bin/home.php?Lang=en";}
+	}
+	if(url=="http://www.asia.edu.tw"){
+		if(lang=="gb"){url="http://www.asia.edu.tw/CN/";}
+		if(lang=="en"){url="http://www.asia.edu.tw/EN/";}
+	}
+	if(url=="http://m.asia.edu.tw"){
+		url="http://m.asia.edu.tw/index-tc.htm";
+		if(lang=="gb"){url="http://m.asia.edu.tw/index-sc.htm";}
+		if(lang=="en"){url="http://m.asia.edu.tw/index-en.htm";}
+	}
+
+	if(document.getElementById('keep').checked){
+		setCookie("keep",url);
+		setCookie("lang",lang);
+	}
+
+	location.href=url;
+	//window.open(url);
+}
+
+var leftOpen=true;
+$(document).ready(function() {
+		checkCookie();
+		
+		$(".youtube").colorbox({iframe:true, innerWidth:'80%', innerHeight:'80%'});
+		
+		//$('#leftSide').css({width:"8px",overflow:"hidden",'margin-right':'-6px'});
+		$('#leftSide').css({width:"190px",overflow:"hidden",'margin-right':'0px'});
+		$('#leftSideBar').click(function() {
+			if(leftOpen){
+				$('#leftSide').animate({width:"8px",overflow:"hidden",'margin-right':'-6px'},"fast");
+				leftOpen=false;
+			}else{
+				$('#leftSide').animate({width:"190px",overflow:"hidden",'margin-right':'0px'},"fast");
+				leftOpen=true;
+			}
+		});
+		
+		//document.onload=window.open('popup.htm','news','directories=no,location=no,menubar=no,toolbar=no,scrollbars=no,height=300,width=400,top=250,left=400');
+			$.colorbox({href:'popup.htm',innerWidth:400,innerHeight:300,opacity:0.5});
+	});
+
+</script>
+<noscript>
+您的瀏覽器不支援script,歡迎回<a href="http://www.asia.edu.tw/Main_pages/index_website_map.htm" title="網站地圖">網站地圖</a>點選
+	或可至本校<a href="http://web.asia.edu.tw" target="_blank" title="亞洲大學全球資訊網">亞洲大學新版全球資訊網</a>進行觀看
+</noscript>
+
+<body bgcolor="#CDDCCD" topmargin="0">
+<div id="main" align="center" style="position:relative; z-index:1; top: 0">
+  <table border="0" id="" cellspacing="0" cellpadding="0" style="position: relative; top: 0" bgcolor="#FFFFFF" summary="排版用表格" width="" height="">
+    <!-- MSTableType="nolayout" -->
+    <tr>
+      <td height="9%" colspan="3" width="933" bgcolor="#FFFFFF" bordercolor="#FFFFFF" align="center" valign="top"><span style="margin-top: 0px; margin-bottom: 0px" align="center">
+          <table bgcolor="#558080" border="0" cellpadding="0" cellspacing="0" width="100%" height="75">
+    <tr>
+      <td colspan="3" align="center" valign="top"><table id="table17" bgcolor="#558080" border="0" cellpadding="0" cellspacing="0" width="100%" height="77">
+          <tbody>
+            <tr>
+              <td width="2%" height="77" rowspan="3" align="left" valign="bottom" bgcolor="#FFFFFF">&nbsp;</td>
+              <td width="48%" height="77" rowspan="3" align="left" valign="bottom" nowrap="nowrap" bgcolor="#558080"><img src="images/title_2.jpg" alt="亞洲大學" width="550" height="77" border="0" align="left" usemap="#Map" hspace="0" />
+                <table id="table18" bgcolor="#558080" border="0" cellpadding="0" cellspacing="0" width="163"></table>
+              </td>
+              <td width="50%" height="27" align="right" valign="bottom" bgcolor="#558080">
+                <a href="#" title="上方功能連結區塊" accesskey="U"><font color="#558080" size="1">:::</font></a> 
+                <a target="_blank" title="Asia Modern亞洲大學亞洲現代美術館" href="http://asiamodern.asia.edu.tw"> 
+                  <img src="images/asiamodern.jpg" alt="Asia Modern亞洲大學亞洲現代美術館" width="125" height="27" border="0" align="center" />
+                </a>
+				<!--<a target="_top" title="亞大世界排名榮譽榜" href="main.php?Superiority/World_ranking"> 
+                  <img src="images/auwrank.jpg" alt="亞大世界排名榮譽榜" width="108" height="27" border="0" align="center" />
+                </a>-->
+                &nbsp;
+              </td>
+            </tr>
+            <tr>
+              <td width="50%" height="25" align="right" valign="middle" bgcolor="#558080"><p style="margin-top: 0px; margin-bottom: -1px"><font face="新細明體">
+                <b>   |  </b><a class="menu" href="index.php" title="亞洲大學全球資訊網首頁" accesskey="I">&nbsp;首頁</a>
+                <b>   |  </b><a class="menu" href="EN/" title="Asia University English Website">&nbsp;English</a>
+				<b>   |  </b><a class="menu" href="CN/" title="亚洲大学全球资讯网简体中文版">&nbsp;简体版</a>
+                <b>   |</b>
+				<a class="menu" target="_blank" href="http://ciae.asia.edu.tw/" title="International Student">&nbsp;International Student</a>
+				<!--<b>|</b>&nbsp;&nbsp;<a class="menu" target="_blank" href="http://www.cdc.gov.tw/h7n9flu.html" title="H7N9流感專區"><font face="Arial">H7N9</font><font face="新細明體">流感專區</font></a>-->
+                <b>   |   </b>&nbsp;&nbsp;&nbsp;&nbsp;
+                </font></p>
+              </td>
+            </tr>
+            <tr>
+              <td width="" height="18" align="right" bgcolor="#558080" valign="middle" nowrap="nowrap"><p style="margin-top: -2px; margin-bottom: 0"> <font face="新細明體">
+                <b><font color="#C1F0F2"> |  </font></b><span lang="zh-tw" xml:lang="zh-tw"><font color="#C1F0F2"></font> <a class="menu" href="main_2.php?Future_Students" title="未來學生"><font color="#C1F0F2">&nbsp;未來學生</font></a></span>
+                <b><font color="#C1F0F2"> |  </font></b><span lang="zh-tw" xml:lang="zh-tw"><font color="#C1F0F2"></font> <a class="menu" href="main_2.php?Current_Students" title="本校學生"> <font color="#C1F0F2">&nbsp;本校學生</font></a></span>
+                <b><font color="#C1F0F2"> |  </font></b><span lang="zh-tw" xml:lang="zh-tw"><font color="#C1F0F2"></font> <a class="menu" href="main_2.php?parents" title="家長貴賓"> <font color="#C1F0F2">&nbsp;家長貴賓</font></a></span>
+                <b><font color="#C1F0F2"> |  </font></b><span lang="zh-tw" xml:lang="zh-tw"><font color="#C1F0F2"></font> <a class="menu" href="main_2.php?visitors" title="一般訪客"> <font color="#C1F0F2">&nbsp;一般訪客</font></a></span>
+                <b><font color="#C1F0F2"> |  </font></b><span lang="zh-tw" xml:lang="zh-tw"><font color="#C1F0F2"></font> <a class="menu" href="main_2.php?Teachers_Staff" title="教職員工"> <font color="#C1F0F2">&nbsp;教職員工</font></a></span>
+                <b><font color="#C1F0F2"> |  </font></b><span lang="zh-tw" xml:lang="zh-tw"><font color="#C1F0F2"></font> <a class="menu" href="main_2.php?Alumni" title="畢業校友"> <font color="#C1F0F2">&nbsp;畢業校友</font></a></span>
+                </b><span lang="zh-tw" xml:lang="zh-tw"><font color="#C1F0F2"></font> </span>
+                <b><font color="#C1F0F2"> |   </font></b>&nbsp;&nbsp;&nbsp;
+                </font></p>
+              </td>
+            </tr>
+          </tbody>
+        </table></td>
+    </tr>
+</table>
+<table bgcolor="#558080" border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+      <td align="center" bgcolor="#006699" width="240" height="25" valign="middle">
+        <p style="margin-top: 1px; margin-bottom: 1px"> <font face="新細明體">
+        <font color="#FFCCFF"><span style="vertical-align: bottom"><b>&nbsp;|</b></span></font><span lang="zh-tw" xml:lang="zh-tw"><font size="2">
+		<a class="menu" href="main_4.php?recruit_shortcut" title="考生捷徑"><font color="#FFCCFF">&nbsp;考生捷徑</font></a></font></span>
+        <font color="#FFCCFF"><span style="vertical-align: bottom"><b>&nbsp;|</b></span></font>
+		<a class="menu" href="main_2.php?New_Students" title="新生專區"><font color="#FFCCFF">&nbsp;新生專區</font></a>
+		<font color="#FFCCFF"> &nbsp;<span style="vertical-align: bottom"><b>|&nbsp;</b></span></font>
+		<a class="menu" target="_blank" href="http://ccae.asia.edu.tw/" title="陸港澳僑生"><font color="#FFCCFF">陸港澳僑生</font></a>
+		<font color="#FFCCFF"> &nbsp;<span style="vertical-align: bottom"><b>|&nbsp;</b></span></font>
+		</font> 
+        </p>
+    </td>
+      <td align="center" bgcolor="#6fa2a2" width="" height="25" valign="middle" nowrap="nowrap"><p style="margin-top: 1px; margin-bottom: 1px"><font face="新細明體"> 
+    	<span style="vertical-align: bottom"><b>&nbsp;|</b></span><span lang="zh-tw" xml:lang="zh-tw"><a class="menu" href="main.php?Superiority/superiority" title="本校優勢">&nbsp;&nbsp;本校優勢</a></span>
+      <span style="vertical-align: bottom"><b>&nbsp;|</b></span><span lang="zh-tw" xml:lang="zh-tw"><font size="2"><a class="menu" href="main_1.php?yard/yard_01_09" title="校園美景">&nbsp;&nbsp;校園美景</a></font></span>
+      <span style="vertical-align: bottom"><b>&nbsp;|</b></span><span lang="zh-tw" xml:lang="zh-tw"><a class="menu" href="main_1.php?about/about_01" title="認識亞洲大學">&nbsp;&nbsp;認識亞洲</a></span>
+      <span style="vertical-align: bottom"><b>&nbsp;|</b></span><span lang="zh-tw" xml:lang="zh-tw"><font size="2"><a class="menu" href="main.php?faculty/faculty" title="傑出師資">&nbsp;&nbsp;傑出師資</a></font></span>
+      <span style="vertical-align: bottom"><b>&nbsp;|</b></span><span lang="zh-tw" xml:lang="zh-tw"><font size="2"><a class="menu" href="main.php?recruit/recruit" title="入學招生">&nbsp;&nbsp;入學招生</a></font></span>
+      <span style="vertical-align: bottom"><b>&nbsp;|</b></span><span lang="zh-tw" xml:lang="zh-tw"><font size="2"><a class="menu" href="main.php?academics/academics_01" title="教學研究">&nbsp;&nbsp;教學研究</a></font></span>
+      <span style="vertical-align: bottom"><b>&nbsp;|</b></span><span lang="zh-tw" xml:lang="zh-tw"><font size="2"><a class="menu" href="main_1.php?administration/administration/administration_01" title="行政服務">&nbsp;&nbsp;行政服務</a></font></span>
+      <span style="vertical-align: bottom"><b>&nbsp;|</b></span><span lang="zh-tw" xml:lang="zh-tw"><font size="2"><a class="menu" href="main_3.php?resources/resources" title="學習資源">&nbsp;&nbsp;學習資源</a></font></span>
+      <span style="vertical-align: bottom"><b>&nbsp;|</b></span><a class="menu" href="main.php?student/services_01" title="學生照顧">&nbsp;&nbsp;學生照顧</a> <span lang="zh-tw" xml:lang="zh-tw"></span>
+      <span style="vertical-align: bottom"><b>&nbsp;|</b></span><a class="menu" href="activities.php" title="活動生活">&nbsp;&nbsp;活動生活</a><span lang="zh-tw" xml:lang="zh-tw"></span>
+      <span style="vertical-align: bottom"><b>&nbsp;|</b></span><span lang="zh-tw" xml:lang="zh-tw"><a class="menu" href="board.php" title="校園資訊">&nbsp;&nbsp;校園資訊&nbsp;&nbsp;</a></span><span style="vertical-align: bottom"><b>|&nbsp;</b></span></font>
+    </p></td>
+    <td align="center" bgcolor="#abc9c9" width="150" height="25" valign="middle">
+    	<p style="margin-top: 1px; margin-bottom: 1px">
+		<span style="vertical-align: bottom"><b><font color="#006699"  face="新細明體">|</font></b></span></font><span style="vertical-align: top"><a class="menu" href="sitemap.php" title="網站地圖" accesskey="W"><font color="#006699">&nbsp;&nbsp;網站地圖&nbsp;&nbsp;</font></a></span><span style="vertical-align: bottom"><b><font color="#006699"  face="新細明體">|&nbsp;</font></b></span>
+    </p></font></td>
+	<a href="cyut_20140123030056.html"> </a>
+  </tr>
+</table>
+<map name="Map" id="Map">
+  <area shape="rect" coords="3, 1, 282, 72" href="index.php" title="亞洲大學全球資訊網首頁" />
+  <area shape="rect" coords="316, 1, 488, 72" href="http://asiaweb.asia.edu.tw/main.php?Superiority/China_Asia_A_U" target="_top" title="中國醫藥大學暨亞洲大學聯合大學" />
+</map>
+<!-- Start Alexa Certify Javascript -->
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"GjYKi1a4ZP00ya", domain:"asia.edu.tw",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=GjYKi1a4ZP00ya" style="display:none" height="1" width="1" alt="" /></noscript>
+<!-- End Alexa Certify Javascript -->        </span></td>
+    </tr>
+    <tr>
+      <td width="235" align="left" valign="top" bgcolor="#FFFFFF" bordercolor="#FFFFFF">
+     	<div align="left" style="width:230px; padding-left: 10px;">
+  　<table border="0" cellspacing="0" cellpadding="0" width="270" summary="*">
+  <tr>
+    <td align="left" height="21">
+    	<p style="margin-top: 6px; margin-bottom: -4px; margin-left:-2px"> <font size="1" color="#F0FAF0">&nbsp;&nbsp;&nbsp; <a href="#"> <font size="1" color="#F0FAF0">&nbsp;</font></a></font><font style="font-size: 12pt" color="#008080" face="新細明體">■<b> 活力的亞大</b></font><font color="#008080" face="新細明體">(視訊與要聞)</font>      <p style="margin-top: -5px; margin-bottom: -2px; margin-left:-2px"> <font size="1" color="#F0FAF0">&nbsp;&nbsp;&nbsp; <a href="#"> <font size="1" color="#F0FAF0">&nbsp;</font></a></font><span style="font-weight: 700"><font face="Arial" color="#008080">---------------------------------------------------</font></span></td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <table style="font-family: 'Times New Roman'" cellspacing="0" cellpadding="0" width="230" summary="*" border="0">
+    <tbody>
+        <tr style="font-size: 9pt; color: rgb(255,255,255)">
+            <td style="font-size: 9pt" align="center">
+            <p style="margin-bottom: 3px; margin-top: 0" align="center"><font color="#008080" face="Arial"><a class="youtube" style="font-size: 9pt; text-decoration: none; font-family: 新細明體; color: rgb(68,102,102)" href="http://asiaweb.asia.edu.tw/news1_detail.php?no=11755"><img style="border-top: rgb(0,128,128) 1px solid; border-right: rgb(0,128,128) 1px solid; border-bottom: rgb(0,128,128) 1px solid; border-left: rgb(0,128,128) 1px solid" border="0" alt="" width="188" height="72" src="/Main_pages/image/6.jpg" /></a></font></p>
+            </td>
+        </tr>
+        <tr style="font-size: 9pt; color: rgb(255,255,255)">
+            <td style="font-size: 9pt" align="center">
+            <p style="margin-bottom: 3px; margin-top: 0" align="center"><font color="#008080" face="Arial"><a class="youtube" style="font-size: 9pt; text-decoration: none; font-family: 新細明體; color: rgb(68,102,102)" target="_blank" href="http://ha.asia.edu.tw/files/40-1008-325-1.php?Lang=zh-tw"><img style="border-top: rgb(0,128,128) 1px solid; border-right: rgb(0,128,128) 1px solid; border-bottom: rgb(0,128,128) 1px solid; border-left: rgb(0,128,128) 1px solid" border="0" alt="" width="188" height="72" src="/Main_pages/image/10_1.jpg" /></a></font></p>
+            </td>
+        </tr>
+        <tr style="font-size: 9pt; color: rgb(255,255,255)">
+            <td style="font-size: 9pt" align="center">
+            <p style="margin-bottom: 3px; margin-top: 0" align="center"><font color="#008080" face="Arial"><a class="youtube" style="font-size: 9pt; text-decoration: none; font-family: 新細明體; color: rgb(68,102,102)" href="https://www.youtube.com/v/9SE-k-TYRVM?rel=0&amp;wmode=transparent"><img style="border-top: rgb(0,128,128) 1px solid; border-right: rgb(0,128,128) 1px solid; border-bottom: rgb(0,128,128) 1px solid; border-left: rgb(0,128,128) 1px solid" border="0" alt="" width="188" height="72" src="/Main_pages/image/3.jpg" /></a></font></p>
+            </td>
+        </tr>
+        <tr style="font-size: 9pt; color: rgb(255,255,255)">
+            <td style="font-size: 9pt" align="center">
+            <p align="center" style="margin-top: 0; margin-bottom: 3px"><font color="#008080" face="Arial">
+			<a href="http://www.asia.edu.tw/main.php?activities/activities_03">
+			<img style="border-top: rgb(0,128,128) 1px solid; border-right: rgb(0,128,128) 1px solid; border-bottom: rgb(0,128,128) 1px solid; border-left: rgb(0,128,128) 1px solid" border="0" alt="" src="/Main_pages/image/11-1.jpg" /></a></font></td>
+        </tr>
+    </tbody>
+</table>    </td>
+  </tr>
+</table>
+</div><br>
+<div align="left" style="width:230px; margin-top: -20px; margin-left: 10px;">
+  　<table border="0" cellspacing="0" cellpadding="0" width="270" summary="*">
+  <tr>
+    <td align="left" height="21">
+    	<p style="margin-top: 6px; margin-bottom: -4px; margin-left:-2px"> <font size="1" color="#F0FAF0">&nbsp;&nbsp;&nbsp; <a href="#"> <font size="1" color="#F0FAF0">&nbsp;</font></a></font><font style="font-size: 12pt" color="#008080" face="新細明體">■<b> 本網站版本</b></font>      <p style="margin-top: -5px; margin-bottom: -2px; margin-left:-2px"> <font size="1" color="#F0FAF0">&nbsp;&nbsp;&nbsp; <a href="#"> <font size="1" color="#F0FAF0">&nbsp;</font></a></font><span style="font-weight: 700"><font face="Arial" color="#008080">---------------------------------------------------</font></span></td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <table style="font-family: 'Times New Roman'" cellspacing="0" cellpadding="0" width="231" summary="*" border="0">
+    <tbody>
+        <tr style="font-size: 9pt; color: rgb(255,255,255)">
+            <td style="font-size: 9pt" align="left">
+            <p style="margin-bottom: 1px; margin-top: 5px"><font color="#f0faf0" size="1">&nbsp; &nbsp;&nbsp;&nbsp;</font><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)">&middot;<font face="Arial">&nbsp;</font></span><font face="Arial"><a title="亞洲大學全球資訊網(PC新版)" style="font-size: 9pt; text-decoration: none; color: rgb(68,102,102)" target="_top" href="http://web.asia.edu.tw/">PC版(無障礙用)</a></font></p>
+            </td>
+            <td style="font-size: 9pt" align="left">
+            <p style="margin-bottom: -2px; margin-top: 0" align="left"><font color="#f0faf0" size="1">&nbsp; &nbsp;&nbsp;&nbsp;</font><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)">&middot;&nbsp;</span><font face="Arial"><a title="亞洲大學全球資訊網(中文網址)" style="font-size: 9pt; text-decoration: none; color: rgb(68,102,102)" target="_top" href="http://xn--nlqs0x3xbuw5a.tw/">亞洲大學.tw</a> </font></p>
+            </td>
+        </tr>
+        <tr style="font-size: 9pt; color: rgb(255,255,255)">
+            <td style="font-size: 9pt" valign="top" width="117">
+            <p style="margin-bottom: 1px; margin-top: 0px" align="left"><font color="#f0faf0" size="1">&nbsp; &nbsp; &nbsp;</font><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)">&middot;&nbsp;</span><font face="Arial"><a title="亞洲大學全球資訊網(傳統正版)" style="font-size: 9pt; text-decoration: none; color: rgb(68,102,102)" target="_top" href="http://www.asia.edu.tw/">傳統版(Tablet用)</a></font></p>
+            </td>
+            <td style="font-size: 9pt" align="left">
+            <p style="margin-bottom: 1px; margin-top: 0px"><font color="#f0faf0" size="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)">&middot;&nbsp;</span><font face="Arial"><a title="亞洲大學行動APP" style="font-size: 9pt; text-decoration: none; color: rgb(68,102,102)" target="_top" href="http://web.asia.edu.tw/files/13-1000-14238.php?Lang=zh-tw">APP(手機用)</a></font></p>
+            </td>
+        </tr>
+        <tr style="font-size: 9pt; color: rgb(255,255,255)">
+            <td style="font-size: 9pt" valign="top" width="117">
+            <p style="margin-bottom: 1px; margin-top: 0px"><font color="#f0faf0" size="1">&nbsp; &nbsp;&nbsp;&nbsp;</font><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)">&middot;&nbsp;</span><font face="新細明體"><a title="&#20122;洲大&#23398;全球&#36164;&#35759;网&#31616;体中文版" style="font-size: 9pt; text-decoration: none; color: rgb(68,102,102)" href="http://www.asia.edu.tw/CN/"><font face="Arial">簡体版</font></a></font></p>
+            </td>
+            <td style="font-size: 9pt" valign="top" width="114">
+            <p style="margin-bottom: 1px; margin-top: 0px"><font color="#f0faf0" size="1">&nbsp; &nbsp; &nbsp;</font><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)">&middot;&nbsp;</span><font face="Arial"><a title="Asia University English Website" style="font-size: 9pt; text-decoration: none; color: rgb(68,102,102)" href="http://www.asia.edu.tw/EN/">English</a></font></p>
+            </td>
+        </tr>
+    </tbody>
+</table>    </td>
+  </tr>
+</table>
+</div>
+<div align="left" style="width:230px; margin-left: 10px; margin-top:0px;">
+  <table border="0" cellspacing="0" cellpadding="0" width="100%" summary="*">
+    <tr>
+      <td width="230" valign="top" style="padding-left: 12px;"><font size="1" color="#F0FAF0">&nbsp;</font><span style="font-weight: 700"><font face="Arial" color="#008080">---------------------------------------------------</font></span></td>
+    </tr>
+    <tr>
+      <td width="211" valign="top"><p align="center" style="margin-top: 10px; margin-bottom: 5px"> <font color="#808080">
+          <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Ffriends%2Fedit%2F%23%21%2Fpages%2Fya-zhou-da-xue-Asia-University-Taiwan%2F201785650801&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:85px; height:21px;" allowTransparency="true" name="I1" marginwidth="1" marginheight="1"></iframe>
+		  
+          </font></td>
+    </tr>
+    <tr>
+      <td width="215" valign="top" style="font-size: 9pt; color: #FFFFFF"><p align="center" style="margin-top: 0px; margin-bottom: 0; margin-left: 5px;"> <a title="无障碍网站" target=" _blank" target="_blank" href="http://www.webguide.nat.gov.tw/wSite/sp?xdUrl=/wSite/enable/valid.jsp&conId=20111228180907"> <img src="images/aplus.gif" style="border: 0" alt="通过A+优先等级无障碍网页检测"> </a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://jigsaw.w3.org/css-validator/check/referer" title="W3C CSS检测" target="_blank"> <img src="images/vcss.gif" style="border: 0" alt="本校网页通过W3C CSS 2.1版本检测"></a></p></td>
+    </tr>
+  </table>
+</div><br>      </td>
+      <td width="" align="left" valign="top" bgcolor="#FFFFFF" bordercolor="#FFFFFF"><div align="left">
+          <table border="0" width="601" id="" height="" cellspacing="0" summary="排版用表格">
+            <tr>
+              <td bgcolor="#FFFFFF" border="0" valign="top" align="center" width="100%" height="">
+              	<table width="669" border="0" cellspacing="0" cellpadding="0" id="" summary="排版用表格" height="" bgcolor="#FFFFFF">
+                  <tr style="font-size: 10pt; color: #FFFFFF">
+                    <td height="" style="font-size: 10pt; color: #FFFFFF" bgcolor="#FFFFFF" align="center">
+                    	<!--iframe name="I9" src="http://www.asia.edu.tw/Pictures/dynamic_headline_pictures/imagepages/image0000+956.html" marginwidth="1" marginheight="0" width="671" scrolling="no" border="0" frameborder="0" height="133" align="top" title="校景與活動">您的瀏覽器不支援內置框架或目前的設定為不顯示內置框架。 </iframe>
+<p style="margin-top: 3px; margin-bottom:0" align="right"> <font color="#446666" face="Arial"> <span style="font-size: 9pt">(</span></font><font color="#666666"><span style="text-decoration: none"><font face="Arial" style="font-size: 9pt" color="#446666"><a target="I4" title="校園美景與活動照片自動播放" href="http://www.asia.edu.tw/Pictures/Thin_Picture_set/arles_gallery/imagepages/image1.html"><font color="#008080">&lt;more&gt;</font></a></font><a target="I9" title="校園美景與活動照片自動播放" href="../Pictures/Thin_Picture_set/arles_gallery/imagepages/image1.html"><font face="Arial" style="font-size: 9pt" color="#446666">：</font><font face="Arial" style="font-size: 9pt" color="#808080">其他校景與活動自動播放</font></a></span></font><font color="#446666" style="font-size: 9pt" face="Arial"><span style="text-decoration: none">)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font></p-->
+<div id='slider' align="center">
+	<div id="SliderName78">
+			<a href="http://www.asia.edu.tw/news1_detail.php?no=11873" target="_blank">		<img src="upload/pics/2/201510201531340.jpg" title="2015-10-20_Nobel_Laureate_Tirole_Speech" alt="2015-10-20_Nobel_Laureate_Tirole_Speech" border="0" width="667" height="132">
+		</a>  		<a href="http://www.asia.edu.tw/news1_detail.php?no=11870" target="_blank">		<img src="upload/pics/2/2015102008080021.jpg" title="2015_亞大學生制服日" alt="2015_亞大學生制服日" border="0" width="667" height="132">
+		</a>  		<a href="http://www.asia.edu.tw/news1_detail.php?no=11854" target="_blank">		<img src="upload/pics/2/2015100301451115.jpg" title="2015-10-01_全球最佳大學亞大入榜" alt="2015-10-01_全球最佳大學亞大入榜" border="0" width="667" height="132">
+		</a>  		<a href="http://www.asia.edu.tw/news1_detail.php?no=11850" target="_blank">		<img src="upload/pics/2/201510130138418.jpg" title="2015-09-25_新生報到率近百" alt="2015-09-25_新生報到率近百" border="0" width="667" height="132">
+		</a>  		<a href="http://www.asia.edu.tw/news1_detail.php?no=11840" target="_blank">		<img src="upload/pics/2/2015092014061767.jpg" title="全球大數據權威專家麥爾荀伯格到亞大演講" alt="全球大數據權威專家麥爾荀伯格到亞大演講" border="0" width="667" height="132">
+		</a>  		<a href="http://www.asia.edu.tw/news1_detail.php?no=11831" target="_blank">		<img src="upload/pics/2/2015091410101046.jpg" title="2015-09-11_亞大的第1堂課─文茜講堂「愉悅學校」" alt="2015-09-11_亞大的第1堂課─文茜講堂「愉悅學校」" border="0" width="667" height="132">
+		</a>  		<a href="http://www.asia.edu.tw/news1_detail.php?no=11821" target="_blank">		<img src="upload/pics/2/2015090602414345.jpg" title="2015_日本插畫大獎" alt="2015_日本插畫大獎" border="0" width="667" height="132">
+		</a>  		<a href="http://www.asia.edu.tw/news1_detail.php?no=11815" target="_blank">		<img src="upload/pics/2/2015090109383496.jpg" title="2015-08-28_美國德州A&M大學21位師生到亞大交流" alt="2015-08-28_美國德州A&M大學21位師生到亞大交流" border="0" width="667" height="132">
+		</a>  		<a href="http://www.asia.edu.tw/news1_detail.php?no=11807" target="_blank">		<img src="upload/pics/2/2015082013382734.jpg" title="2015-08-20_馬來亞大學學生來研修" alt="2015-08-20_馬來亞大學學生來研修" border="0" width="667" height="132">
+		</a>  		<a href="http://www.asia.edu.tw/news1_detail.php?no=11797" target="_blank">		<img src="upload/pics/2/2015081201260090.jpg" title="2015-08-10_德國紅點設計獎" alt="2015-08-10_德國紅點設計獎" border="0" width="667" height="132">
+		</a>  		<a href="http://www.asia.edu.tw/news1_detail.php?no=11796" target="_blank">		<img src="upload/pics/2/2015081021360051.jpg" title="2015-08-07_Forever_Young_Exhibition" alt="2015-08-07_Forever_Young_Exhibition" border="0" width="667" height="132">
+		</a>  		<a href="http://www.asia.edu.tw/news1_detail.php?no=11755" target="_blank">		<img src="upload/pics/2/2015061423551436.jpg" title="2015-06-11_100_Asia_Best_Universities" alt="2015-06-11_100_Asia_Best_Universities" border="0" width="667" height="132">
+		</a>  		<a href="http://www.asia.edu.tw/news1_detail.php?no=11779" target="_blank">		<img src="upload/pics/2/2015071501590087.jpg" title="2015_07_15受邀參與成立國際教育聯盟" alt="2015_07_15受邀參與成立國際教育聯盟" border="0" width="667" height="132">
+		</a>  		<a href="http://www.asia.edu.tw/news1_detail.php?no=11777" target="_blank">		<img src="upload/pics/2/2015070822212561.jpg" title="2015-07-08_RedDot_Awards_Best_of_the_Best" alt="2015-07-08_RedDot_Awards_Best_of_the_Best" border="0" width="667" height="132">
+		</a>  		<a href="http://www.asia.edu.tw/news1_detail.php?no=11774" target="_blank">		<img src="upload/pics/2/201507020726035.jpg" title="2015-06-30_Donation_to_Bahsian_Park_Fire" alt="2015-06-30_Donation_to_Bahsian_Park_Fire" border="0" width="667" height="132">
+		</a>  		<a href="http://www.asia.edu.tw/news1_detail.php?no=11760" target="_blank">		<img src="upload/pics/2/2015061422314450.jpg" title="2015-06-13_頒張忠謀名譽博士學位" alt="2015-06-13_頒張忠謀名譽博士學位" border="0" width="667" height="132">
+		</a>  		<a href="http://www.asia.edu.tw/news1_detail.php?no=11750" target="_blank">		<img src="upload/pics/2/201506060108355.jpg" title="Degar_Exhibition_2" alt="Degar_Exhibition_2" border="0" width="667" height="132">
+		</a>  		<a href="http://www.asia.edu.tw/news1_detail.php?no=11746" target="_blank">		<img src="upload/pics/2/2015060413584838.jpg" title="Exchange_with_Tulane_University" alt="Exchange_with_Tulane_University" border="0" width="667" height="132">
+		</a>  		<a href="http://www.asia.edu.tw/news1_detail.php?no=11730" target="_blank">		<img src="upload/pics/2/2015052413492764.jpg" title="Awards_ITEX_2015" alt="Awards_ITEX_2015" border="0" width="667" height="132">
+		</a>  		<a href="http://www.asia.edu.tw/news1_detail.php?no=11715" target="_blank">		<img src="upload/pics/2/201505121113039.jpg" title="AU_being_best_enroll_distribution_rate" alt="AU_being_best_enroll_distribution_rate" border="0" width="667" height="132">
+		</a>  		<a href="http://www.asia.edu.tw/news1_detail.php?no=11712" target="_blank">		<img src="upload/pics/2/2015051210404472.jpg" title="2015_Paris_Invention_Fair" alt="2015_Paris_Invention_Fair" border="0" width="667" height="132">
+		</a>  		<a href="http://www.asia.edu.tw/news1_detail.php?no=11706" target="_blank">		<img src="upload/pics/2/2015050202222279.jpg" title="2015-05-01_Art_&_Culture_Festival" alt="2015-05-01_Art_&_Culture_Festival" border="0" width="667" height="132">
+		</a>  		<a href="http://www.asia.edu.tw/news1_detail.php?no=11668" target="_blank">		<img src="upload/pics/2/2015033115441939.jpg" title="2015-03-27_3rd_in_10_Most_Chosen_Universities" alt="2015-03-27_3rd_in_10_Most_Chosen_Universities" border="0" width="667" height="132">
+		</a>  		<a href="http://www.asia.edu.tw/news1_detail.php?no=11658" target="_blank">		<img src="upload/pics/2/2015040705241419.jpg" title="2015-03-20_College_IEE_all_passing_IEET" alt="2015-03-20_College_IEE_all_passing_IEET" border="0" width="667" height="132">
+		</a>  		<a href="http://www.asia.edu.tw/news1_detail.php?no=11669" target="_blank">		<img src="upload/pics/2/2015033114493953.jpg" title="2015-03-28_Fashion_Dept_Grad_Show" alt="2015-03-28_Fashion_Dept_Grad_Show" border="0" width="667" height="132">
+		</a>  		<a href="http://www.asia.edu.tw/news1_detail.php?no=11650" target="_blank">		<img src="upload/pics/2/2015031906383073.jpg" title="2015-03-17_iF_concept_award" alt="2015-03-17_iF_concept_award" border="0" width="667" height="132">
+		</a>  		<a href="http://www.asia.edu.tw/news1_detail.php?no=11629" target="_blank">		<img src="upload/pics/2/2015030205310249.png" title="2015-02-12_top_20_best_schools" alt="2015-02-12_top_20_best_schools" border="0" width="667" height="132">
+		</a>  		<a href="http://www.asia.edu.tw/news1_detail.php?no=11617" target="_blank">		<img src="upload/pics/2/2015021014043428.png" title="2015-02-04_10-year_Teaching_Excellency" alt="2015-02-04_10-year_Teaching_Excellency" border="0" width="667" height="132">
+		</a>  		<a href="http://www.asia.edu.tw/news1_detail.php?no=11607" target="_blank">		<img src="upload/pics/2/2015012800300739.png" title="2015-01-27_幼教系榮獲美感教育圖文創作獎" alt="2015-01-27_幼教系榮獲美感教育圖文創作獎" border="0" width="667" height="132">
+		</a>  		<a href="http://www.asia.edu.tw/news1_detail.php?no=11575" target="_blank">		<img src="upload/pics/2/201501062334327.jpg" title="2014-12-30_竇加特展暨空間設計展" alt="2014-12-30_竇加特展暨空間設計展" border="0" width="667" height="132">
+		</a>    </div>
+</div>
+<script type="text/javascript">
+	demo3Effect1 = {name: 'myEffect31', top: true, move: true, duration: 1000}; 
+	demo3Effect2 = {name: 'myEffect32', right: true, move: true, duration: 1000}; 
+	demo3Effect3 = {name: 'myEffect33', bottom: true, move: true, duration: 1000}; 
+	demo3Effect4 = {name: 'myEffect34', left: true, move: true, duration: 1000}; 
+	demo3Effect5 = {name: 'myEffect35', rows: 3, cols: 9, delay: 50, duration: 100, order: 'random', fade: true}; 
+	demo3Effect6 = {name: 'myEffect36', rows: 2, cols: 4, delay: 100, duration: 100, order: 'random', fade: true, chess: true}; 
+	effectsDemo3 = [demo3Effect1,demo3Effect2,demo3Effect3,demo3Effect4,demo3Effect5,demo3Effect6,'blinds'];
+	var demoSlider = Sliderman.slider({container: 'SliderName78', width: 667, height: 132, effects: effectsDemo3, display: {pause: true, autoplay: 5000}});
+</script>
+                   	</td>
+                  </tr>
+                </table>
+                <div id="body">
+                	<table border="0" width="671" cellspacing="0" cellpadding="0" id="" summary="排版用表格" height="" bgcolor="#F0FAF0">
+  <tr style="font-size: 10pt; color: #FFFFFF">
+    <td height="20" style="border-top:2px solid #FFFFFF; border-right:2px solid #FFFFFF; border-left:2px solid #FFFFFF; font-size: 10pt; color: #FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" bgcolor="#F0FAF0">
+	
+						<p style="margin-bottom: 8px; margin-top:5px; margin-right:10px;" align="right">
+						<font style="font-size: 9pt; color: rgb(150,150,150);" face="新細明體"><上圖：亞大活動剪影 ─ 點按可閱相關報導></font>
+                        </p>	
+						
+      <p style="margin-top: 0px; margin-bottom:0px" align="left"> <a accesskey="C" href="#" title="中間主要內容區塊"> <font color="#F0FAF0" size="2">::</font></a><font style="font-size:16pt" color="#008080" face="">■<b> </b></font><span lang="zh-tw"><b> <font face="" color="#008080">最新報導</font></b></span><font style="font-size: 9pt" color="#446666"> </font><span style="text-decoration: none"> 
+	  
+	  <font face="Arial" color="#446666" style="font-size: 9pt" > <a title="新聞總匯" href="news1.php"> <span style="text-decoration: none"><font color="#4D6573" face="Arial">&lt;</font><font color="#4D6573" face="新細明體"> 新聞總匯</font><font color="#4D6573" face="Arial">&gt;</font></span><span style="text-decoration: none" lang="zh-tw"><font color="#4D6573">：</font></span></a></font>
+	  
+	  
+	  <span lang="zh-tw"><font color="#4D6573" face="" style="font-size: 9pt"></font><font color="#666666" face="" style="font-size: 9pt"><a title="校園報導" href="news1.php"><font face="新細明體" color="#4D6573" style="font-size: 9pt" >校園報導</font></a></span>
+	  
+	  
+	  
+	  <span lang="zh-tw"><font color="#4D6573" face="" style="font-size: 9pt"> &nbsp;</font><font color="#666666" face="" style="font-size: 9pt"><a title="影音新聞" href="news2.php"><font color="#4D6573" face="新細明體" style="font-size: 9pt">影音新聞</font></a></span>
+	  
+	  
+	  
+	  <span lang="zh-tw"><font color="#4D6573" face="" style="font-size: 9pt"> &nbsp;</font><font color="#666666" face="" style="font-size: 9pt"><a title="媒體報導" href="news3.php"><font color="#4D6573" face="新細明體">媒體報導</font></a><font face="" color="#4D6573" style="font-size: 9pt" > </font></font> </span></font>
+	  
+	  <font face=""> <span style="font-size: 9pt" lang="zh-tw"> <font color="#4D6573">&nbsp;</font><a href="asiatv.php" title="亞大電視台"><font color="#4D6573" face="新細明體">亞大電視台</font></a></span></font>
+	  
+	  <font face=""> <span style="font-size: 9pt" lang="zh-tw"> <font color="#0000ff">&nbsp;&nbsp;<特別報導>：</font>
+	  
+	  <a href="main.php?Superiority/World_ranking" title="亞大世界排名" target="_top"><font color="#0000ff" face="新細明體">亞大世界排名</font></a>
+	  
+	  <font face=""> <span style="font-size: 9pt" lang="zh-tw"> <font color="#4D6573">&nbsp;</font>
+	  
+	  <a href="main.php?Superiority/Evaluation_ranking" title="亞大評鑑排名" target="_top"><font color="#0000ff" face="新細明體">亞大評鑑排名</font></a>
+	  
+	  </span></font>	  
+	  
+	  </span></p></td>
+	  
+	  
+  </tr>
+  <tr style="font-size: 10pt; color: #FFFFFF">
+    <td style="border-left:2px solid #FFFFFF; border-right:2px solid #FFFFFF; font-size:10pt; color:#FFFFFF; " bgcolor="#F0FAF0"><p style="margin-top: -7px; margin-bottom: -10px; margin-left:1px" align="center"> <font color="#CDDCCD" style="font-size: 9pt">---------------------------------------------------------------------------------------------------------------------------------------------------------------------</font></td>
+  </tr>
+  <tr style="font-size: 10pt; color: #FFFFFF">
+    <td align="center" style="border-left:2px solid #FFFFFF; border-right:2px solid #FFFFFF; font-size:10pt; color:#FFFFFF; " height="248" bgcolor="#F0FAF0"><div id="news">
+        <table border="0" width="640" cellspacing="0" cellpadding="0" id="" height="100%" summary="*">
+                  <tr>
+          	<td width="306">
+                        	<table border="0" width="100%" cellspacing="0" cellpadding="0" height="100%" summary="*">
+                <tr>
+                  <td align="left" width="306" height="15" colspan="3" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 1px solid #666666; font-size:10pt; color:#FFFFFF"><span lang="en-us"> <font color="#008080" face="symbol"> ·</font></span><font face="arial" color="#008080"> 亞洲大學資傳系學生拍攝《換日》微電影！<sup><font face="arial" color="#FF0000"></font></sup></font></td>
+                </tr>
+                <tr>
+                  <td height="5" colspan="3" valign="top" style="font-size: 10pt; color: #FFFFFF"><p style="margin-top: -2px; margin-bottom: -2px"> </td>
+                </tr>
+                <tr>
+                  <td width="97" height="85" align="center" valign="top" style="font-size: 10pt; color: #FFFFFF"><div style="width:85px;height:85px;overflow:hidden;border: 1px solid #008080;">
+                  	<font  face="arial"><span style="text-decoration: none"><font color="#008080"> <a href="news1_detail.php?no=11891" target="contents"> <img border="0" src="/upload/news/2015103016184018.jpg" style="" height="85"></a></font>
+                  </div></td>
+                  <td width="4" align="left" valign="top" height="85" style="font-size: 10pt; color: #FFFFFF"> 　</td>
+                  <td width="206" align="left" height="85" valign="top" style="font-size: 10pt; color: #FFFFFF"><p style="margin-top: 0; margin-bottom: 0"> <font face="arial" color="#666666"> <span lang="zh-tw"> 朱凱聞、吳尚融、汪昱成、李爵倫同學，參加抗戰勝利暨台灣光復70周年微電影比賽，榮獲首獎。</span></font>
+                    <table width="202" height="17" border="0" cellpadding="0" cellspacing="0" id="" summary="*">
+                      <tr style="font-size: 10pt; color: #FFFFFF">
+                        <td width="89" style="font-size: 10pt; color: #FFFFFF"><p class="style2" style="margin-top: 0; margin-bottom: 0"> <font color="#666666">2015-10-30</font></td>
+                        <td width="93" style="font-size: 10pt; color: #FFFFFF"><div align="right" class="style3">
+                            <p style="margin-top: 0; margin-bottom: 0"> <font face="arial" color="#666666"> <span class="style3" style="text-decoration: none"> <font face="arial"> <a class="more" target="contents" title="more" href="news1_detail.php?no=11891">&lt;more&gt;</a></font></span></font><span class="style3" style="text-decoration: none"></span>
+                          </div></td>
+                      </tr>
+                    </table></td>
+                </tr>
+            	</table>
+            </td>
+            <td width="25"></td>
+            <td width="306">
+                        	<table border="0" width="100%" cellspacing="0" cellpadding="0" height="100%" summary="*">
+                <tr>
+                  <td align="left" width="306" height="15" colspan="3" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 1px solid #666666; font-size:10pt; color:#FFFFFF"><span lang="en-us"> <font color="#008080" face="symbol"> ·</font></span><font face="arial" color="#008080"> 亞大文學嘉年華邀名建築師姚仁祿演講！<sup><font face="arial" color="#FF0000"></font></sup></font></td>
+                </tr>
+                <tr>
+                  <td height="5" colspan="3" valign="top" style="font-size: 10pt; color: #FFFFFF"><p style="margin-top: -2px; margin-bottom: -2px"> </td>
+                </tr>
+                <tr>
+                  <td width="97" height="85" align="center" valign="top" style="font-size: 10pt; color: #FFFFFF"><div style="width:85px;height:85px;overflow:hidden;border: 1px solid #008080;">
+                  	<font  face="arial"><span style="text-decoration: none"><font color="#008080"> <a href="news1_detail.php?no=11890" target="contents"> <img border="0" src="/upload/news/2015102923573723.jpg" style="" height="85"></a></font>
+                  </div></td>
+                  <td width="4" align="left" valign="top" height="85" style="font-size: 10pt; color: #FFFFFF"> 　</td>
+                  <td width="206" align="left" height="85" valign="top" style="font-size: 10pt; color: #FFFFFF"><p style="margin-top: 0; margin-bottom: 0"> <font face="arial" color="#666666"> <span lang="zh-tw"> 姚仁祿：我們站在巨人的肩膀上，可以遠眺更高、更遠；「創意，讓你永遠有路！」</span></font>
+                    <table width="202" height="17" border="0" cellpadding="0" cellspacing="0" id="" summary="*">
+                      <tr style="font-size: 10pt; color: #FFFFFF">
+                        <td width="89" style="font-size: 10pt; color: #FFFFFF"><p class="style2" style="margin-top: 0; margin-bottom: 0"> <font color="#666666">2015-10-29</font></td>
+                        <td width="93" style="font-size: 10pt; color: #FFFFFF"><div align="right" class="style3">
+                            <p style="margin-top: 0; margin-bottom: 0"> <font face="arial" color="#666666"> <span class="style3" style="text-decoration: none"> <font face="arial"> <a class="more" target="contents" title="more" href="news1_detail.php?no=11890">&lt;more&gt;</a></font></span></font><span class="style3" style="text-decoration: none"></span>
+                          </div></td>
+                      </tr>
+                    </table></td>
+                </tr>
+            	</table>
+            </td>
+          </tr>
+          <tr>
+          	<td colspan="3" height="10"></td>
+          </tr>
+          <tr>
+          	<td width="306">
+                        	<table border="0" width="100%" cellspacing="0" cellpadding="0" height="100%" summary="*">
+                <tr>
+                  <td align="left" width="306" height="15" colspan="3" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 1px solid #666666; font-size:10pt; color:#FFFFFF"><span lang="en-us"> <font color="#008080" face="symbol"> ·</font></span><font face="arial" color="#008080"> 艾朵國際執行長林慧倫到亞洲大學演講！<sup><font face="arial" color="#FF0000"></font></sup></font></td>
+                </tr>
+                <tr>
+                  <td height="5" colspan="3" valign="top" style="font-size: 10pt; color: #FFFFFF"><p style="margin-top: -2px; margin-bottom: -2px"> </td>
+                </tr>
+                <tr>
+                  <td width="97" height="85" align="center" valign="top" style="font-size: 10pt; color: #FFFFFF"><div style="width:85px;height:85px;overflow:hidden;border: 1px solid #008080;">
+                  	<font  face="arial"><span style="text-decoration: none"><font color="#008080"> <a href="news1_detail.php?no=11888" target="contents"> <img border="0" src="/upload/news/2015102923482298.jpg" style="" height="85"></a></font>
+                  </div></td>
+                  <td width="4" align="left" valign="top" height="85" style="font-size: 10pt; color: #FFFFFF"> 　</td>
+                  <td width="206" align="left" height="85" valign="top" style="font-size: 10pt; color: #FFFFFF"><p style="margin-top: 0; margin-bottom: 0"> <font face="arial" color="#666666"> <span lang="zh-tw"> 林慧倫執行長分享運動產業發展現況，指出：創業成功關鍵是「行動力」。</span></font>
+                    <table width="202" height="17" border="0" cellpadding="0" cellspacing="0" id="" summary="*">
+                      <tr style="font-size: 10pt; color: #FFFFFF">
+                        <td width="89" style="font-size: 10pt; color: #FFFFFF"><p class="style2" style="margin-top: 0; margin-bottom: 0"> <font color="#666666">2015-10-29</font></td>
+                        <td width="93" style="font-size: 10pt; color: #FFFFFF"><div align="right" class="style3">
+                            <p style="margin-top: 0; margin-bottom: 0"> <font face="arial" color="#666666"> <span class="style3" style="text-decoration: none"> <font face="arial"> <a class="more" target="contents" title="more" href="news1_detail.php?no=11888">&lt;more&gt;</a></font></span></font><span class="style3" style="text-decoration: none"></span>
+                          </div></td>
+                      </tr>
+                    </table></td>
+                </tr>
+            	</table>
+            </td>
+            <td width="25"></td>
+            <td width="306">
+                        	<table border="0" width="100%" cellspacing="0" cellpadding="0" height="100%" summary="*">
+                <tr>
+                  <td align="left" width="306" height="15" colspan="3" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 1px solid #666666; font-size:10pt; color:#FFFFFF"><span lang="en-us"> <font color="#008080" face="symbol"> ·</font></span><font face="arial" color="#008080"> 諾貝爾獎得主提霍勒在亞大與學者論壇！<sup><font face="arial" color="#FF0000">top~</font></sup></font></td>
+                </tr>
+                <tr>
+                  <td height="5" colspan="3" valign="top" style="font-size: 10pt; color: #FFFFFF"><p style="margin-top: -2px; margin-bottom: -2px"> </td>
+                </tr>
+                <tr>
+                  <td width="97" height="85" align="center" valign="top" style="font-size: 10pt; color: #FFFFFF"><div style="width:85px;height:85px;overflow:hidden;border: 1px solid #008080;">
+                  	<font  face="arial"><span style="text-decoration: none"><font color="#008080"> <a href="news1_detail.php?no=11872" target="contents"> <img border="0" src="/upload/news/2015102012082498.jpg" style="" height="85"></a></font>
+                  </div></td>
+                  <td width="4" align="left" valign="top" height="85" style="font-size: 10pt; color: #FFFFFF"> 　</td>
+                  <td width="206" align="left" height="85" valign="top" style="font-size: 10pt; color: #FFFFFF"><p style="margin-top: 0; margin-bottom: 0"> <font face="arial" color="#666666"> <span lang="zh-tw"> 提霍勒教授與北大校長何志欽、教授劉憶如等座談，圍繞氣候變遷、敘利亞難民、產業經濟等話題！</span></font>
+                    <table width="202" height="17" border="0" cellpadding="0" cellspacing="0" id="" summary="*">
+                      <tr style="font-size: 10pt; color: #FFFFFF">
+                        <td width="89" style="font-size: 10pt; color: #FFFFFF"><p class="style2" style="margin-top: 0; margin-bottom: 0"> <font color="#666666">2015-10-20</font></td>
+                        <td width="93" style="font-size: 10pt; color: #FFFFFF"><div align="right" class="style3">
+                            <p style="margin-top: 0; margin-bottom: 0"> <font face="arial" color="#666666"> <span class="style3" style="text-decoration: none"> <font face="arial"> <a class="more" target="contents" title="more" href="news1_detail.php?no=11872">&lt;more&gt;</a></font></span></font><span class="style3" style="text-decoration: none"></span>
+                          </div></td>
+                      </tr>
+                    </table></td>
+                </tr>
+            	</table>
+            </td>
+          </tr>
+
+        </table>
+      </div></td>
+  </tr>
+  <tr style="font-size: 10pt; color: #FFFFFF">
+    <td height="2" align="center" valign="baseline" style="border-left:2px solid #FFFFFF; border-right:2px solid #FFFFFF; font-size:10pt; color:#FFFFFF; " bgcolor="#F0FAF0"><p style="margin-top: -12px; margin-bottom: -12px"> <font color="#CDDCCD" style="font-size: 9pt">---------------------------------------------------------------------------------------------------------------------------------------------------------------------</font></td>
+  </tr>
+</table>
+                </div>
+				<script type="text/javascript" src="js/jquery.marquee.js"></script> 
+<link type="text/css" href="css/jquery.marquee.css" rel="stylesheet" media="all" />
+<table width="671" cellspacing="0" cellpadding="0" id="" summary="排版用表格" height="" bgcolor="#FFFFFF" border="0">
+  <tr style="font-size: 10pt; color: #FFFFFF">
+    <td height="" align="center" bgcolor="#F0FAF0" style="; border-right:2px solid #FFFFFF; border-left:2px solid #FFFFFF; font-size:10pt; color:#FFFFFF; border-top-color:#FFFFFF; border-bottom-color:#FFFFFF"><p align="left"> <font style="font-size: 10pt" color="#008080" face="新細明體">&nbsp;&nbsp; ■<b> </b></font><b> <font  style="font-size: 10pt" face="新細明體" color="#008080">即時新聞</font></b>
+          <ul id="marquee" class="marquee"> 
+                          <li><span style="margin-right:50px;"><a href="http://www.asia.edu.tw/news1_detail.php?no=11854" target="_blank">英國泰晤士報高教專刊評比  亞大是全球最年輕的四個百大大學！  ①金磚五國暨新興經濟體23國百大  亞大全球第53名，全台第10名！  ②創校50年內全球潛力百大  亞大全球第99名，全台第4名！  ③亞洲百大最佳大學  亞大全球第83名，全台第10名！  ④亞洲大學首度入榜  全球最佳大學800大，排名670名！</a></span></li>
+                          <li><span style="margin-right:50px;"><a href="http://www.asia.edu.tw/news1_detail.php?no=11777" target="_blank">亞大3件學生作品榮獲2015德國紅點概念設計獎！其中，視傳陳亭妤「寶柚平安」作品，獲紅點最佳獎。</a></span></li>
+                          <li><span style="margin-right:50px;"><a href="http://www.asia.edu.tw/news1_detail.php?no=11821" target="_blank">亞洲大學視傳系碩士生劉經瑋以「包包流浪記」系列插畫，榮獲2015日本插畫大賽最大獎，獲30萬日圓獎金！</a></span></li>
+                          <li><span style="margin-right:50px;"><a href="http://www.asia.edu.tw/news1_detail.php?no=11797" target="_blank">再傳捷報！本校視傳系10件學生作品，榮獲2015德國紅點傳達設計獎，其中，2件作品獲最佳獎。</a></span></li>
+                          <li><span style="margin-right:50px;">賀!本校連續11年榮獲教育部評為「教學卓越大學」，今、明兩年共獲1億2千萬元補助款，補助金額全國第三高。</span></li>
+                          <li><span style="margin-right:50px;">賀!《Cheer》雜誌首次大學校長互評，選出辦學績優學校「Top20」，亞洲大學名列第2名!</span></li>
+                      </ul>
+		  <br>
+      </td>
+  </tr>
+</table>
+<script>
+$(document).ready(function (){
+  $("#marquee").marquee({yScroll: "bottom", scrollSpeed: 20});
+}); 
+</script>
+                <table width="669" cellspacing="0" cellpadding="0" border="0" summary="排版用表格" height="40" bgcolor="#FFFFFF">
+  <tr style="font-size: 10pt; color: #FFFFFF">
+    <td width="581" align="center" valign="middle" bgcolor="#FFFFFF" style="font-size:10pt;"><p> <font face="Arial" color="#4D6573" style="font-size: 9pt"> 校址<b>:</b> 41354台中市霧峰區柳豐路500號 </font> <font face="Arial" color="#999999" style="font-size: 9pt">&nbsp;</font><font color="#999999" face="Arial"><span style="font-size: 9pt">|&nbsp; </span> </font> <font face="Arial" color="#999999" style="font-size: 9pt">電話<b>:</b> (04)2332-3456 &nbsp;</font><font color="#999999" face="Arial"><span style="font-size: 9pt">|</span></font><font face="Arial" color="#999999" style="font-size: 9pt"> </font> <font face="Arial" color="#4D6573" style="font-size: 9pt">&nbsp;</font><span style="font-size: 9pt"><font face="Arial" color="#4D6573"> <a href="http://web.asia.edu.tw"><font color="#4D6573">本校無障礙網站連結</font></a> &nbsp;</font></span><font face="Arial"><font color="#999999"><span style="font-size: 9pt">|</span></font><span style="font-size: 9pt">&nbsp; </span></font> <a href="#" onClick="$.colorbox({href:'phone.html',opacity:0.5}); return false;" onKeyPress="$.colorbox({href:'phone.html',opacity:0.5}); return false;"> <font face="Arial" color="#999999" style="font-size: 9pt"> 免費聯絡本校</font></a><font face="Arial" color="#999999" style="font-size: 9pt"> </font> <font face="Arial"><span style="font-size: 9pt">&nbsp;</span><font color="#999999"><span style="font-size: 9pt">|</span></font><span style="font-size: 9pt">&nbsp; </span></font> <a href="main.php?privacy" title="亞洲大學隱私權保護政策"> <font face="Arial" color="#4D6573" style="font-size: 9pt">隱私權</font></a></p></td>
+  </tr>
+</table>
+            	</td>
+            </tr>
+          </table>
+        </div></td>
+      <td align="left" valign="top" bgcolor="#FFFFFF" width="250">
+		<p style="margin-top: 4px; margin-bottom: 0; ">
+<div align="center" style="width:100%;">
+  <table border="0" cellspacing="0" cellpadding="0" width="270" summary="*">
+  <tr>
+    <td align="left" height="21">
+    	<p style="margin-top: 6px; margin-bottom: -4px; margin-left:-2px"> <font size="1" color="#F0FAF0">&nbsp;&nbsp;&nbsp; <a href="#"> <font size="1" color="#F0FAF0">&nbsp;</font></a></font><font style="font-size: 12pt" color="#008080" face="新細明體">■<b> 資訊捷徑</b></font>      <p style="margin-top: -5px; margin-bottom: -2px; margin-left:-2px"> <font size="1" color="#F0FAF0">&nbsp;&nbsp;&nbsp; <a href="#"> <font size="1" color="#F0FAF0">&nbsp;</font></a></font><span style="font-weight: 700"><font face="Arial" color="#008080">---------------------------------------------------</font></span></td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <div align="left">
+<table style="font-family: 'Times New Roman'; padding-left: 8px" cellspacing="0" cellpadding="0" width="242" summary="*" border="0">
+    <tbody>
+        <tr style="font-size: 9pt; font-family: Arial, Helvetica, sans-serif; color: rgb(255,255,255)">
+            <td style="font-size: 9pt; font-family: Arial, Helvetica, sans-serif" height="18">
+            <p style="margin-bottom: 0px; margin-left: 10px; margin-top: 0px"><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)"><font color="#0000ff">&nbsp;&middot;</font></span><span style="font-family: 'Times New Roman'; letter-spacing: -1pt"><font color="#808080">&nbsp;</font></span><a title="亞洲大學亞洲現代美術館" style="font-size: 9pt; text-decoration: none; font-family: 新細明體; color: rgb(68,102,102)" target="_top" href="http://www.asia.edu.tw/main_1.php?administration/administration_24"><font color="#0000ff" face="Arial">亞洲現代美術館</font></a><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)"><font color="#0000ff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&middot;</font></span><a title="亞洲大學附屬醫院" style="font-size: 9pt; text-decoration: none; font-family: 新細明體; color: rgb(68,102,102)" target="_top" href="http://www.asia.edu.tw/main_1.php?administration/administration_25"><font color="#0000ff" face="Arial"> 亞洲大學附屬醫院</font></a></p>
+            </td>
+        </tr>
+        <!--<tr style="font-size: 9pt; font-family: Arial, Helvetica, sans-serif; color: rgb(255,255,255)">
+            <td style="font-size: 9pt; font-family: Arial, Helvetica, sans-serif" align="left">
+            <p style="margin-bottom: 1px; margin-left: 10px; margin-top: 1px"><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)"><font color="#0000ff">&nbsp;&middot;</font></span><span style="font-family: 'Times New Roman'; letter-spacing: -1pt"><font color="#808080">&nbsp;</font></span><a title="亞洲大學亞洲現代美術館" style="font-size: 9pt; font-family: 新細明體; color: rgb(68,102,102); text-decoration: none" target="_blank" href="http://asiamodern.asia.edu.tw/"><font color="#0000ff" face="Arial">美術館</font></a><span style="font-family: 'Times New Roman'">&nbsp; &nbsp;</span><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)"><font color="#0000ff">&nbsp; &nbsp;&middot;</font></span><span style="font-family: 'Times New Roman'; letter-spacing: -1pt"><font color="#808080">&nbsp;</font></span><a title="亞洲大學附屬醫院" style="font-size: 9pt; font-family: 新細明體; color: rgb(68,102,102); text-decoration: none" target="_blank" href="http://web.asia.edu.tw/files/13-1000-18682.php?Lang=zh-tw"><font color="#0000ff" face="Arial">附屬醫院</font></a><span style="font-family: 'Times New Roman'">&nbsp; &nbsp;</span><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)"><font color="#0000ff">&nbsp; &nbsp;&middot;</font></span><span style="font-family: 'Times New Roman'; letter-spacing: -1pt"><font color="#808080">&nbsp;</font></span><a title="ATLAS 2014" style="font-size: 9pt; font-family: 新細明體; color: rgb(68,102,102); text-decoration: none" target="_blank" href="http://atlas2014.asia.edu.tw"><font color="#0000ff" face="Arial">ATLAS 2014</font></a></p>
+            </td>
+        </tr>-->
+        <tr style="font-size: 9pt; font-family: Arial, Helvetica, sans-serif; color: rgb(255,255,255)">
+            <td style="font-size: 9pt; font-family: Arial, Helvetica, sans-serif" height="18">
+            <p style="margin-bottom: 0px; margin-left: 10px; margin-top: 0px"><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)"><font color="#0000ff">&nbsp;&middot;&nbsp;</font></span><a title="U19創意發明競賽" style="font-size: 9pt; text-decoration: none; font-family: ariel; color: rgb(68,102,102)" target="_blank" href="http://u19taiwan.asia.edu.tw/"><font color="#0000ff" face="Arial"><span style="letter-spacing: -1pt">U19</span></font></a><span style="letter-spacing: -0.5pt"><font color="#0000ff">&nbsp;</font></span><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)"><font color="#0000ff">&nbsp;&middot;<span style="letter-spacing: -1pt">&nbsp;</span></font></span><a title="臺中盃全國創意大獎" style="font-size: 9pt; text-decoration: none; font-family: 新細明體; color: rgb(68,102,102)" target="_blank" href="http://tc_cup.asia.edu.tw/"><font color="#0000ff"><span style="letter-spacing: -1pt">臺中盃</span></font></a><span style="letter-spacing: -0.5pt"><font color="#808080">&nbsp;</font></span><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)"><font color="#0000ff">&nbsp;&middot;<span style="letter-spacing: -1pt">&nbsp;</span></font></span><span style="letter-spacing: -1.5pt"><a title="研討會資訊" style="font-size: 9pt; text-decoration: none; font-family: 新細明體; color: rgb(68,102,102)" href="http://www.asia.edu.tw/main.php?information/conference"><font color="#0000ff">研討會</font></a></span><span style="letter-spacing: -0.5pt"><font color="#0000ff" face="Symbol"><span style="letter-spacing: -1pt"><font face="新細明體"><span style="letter-spacing: -1pt"><font color="#0000ff" face="新細明體">&nbsp;</font></span>&nbsp;<span style="letter-spacing: -1pt"><font color="#808080" face="Symbol">&nbsp;</font></span></font>&nbsp;&nbsp;</span></font></span><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)"><font color="#0000ff">&middot;<span style="letter-spacing: -1pt">&nbsp;</span></font></span><font style="font-size: 9pt" color="#446666" face="Arial"><span style="letter-spacing: -0.5pt"><a title="諾貝爾大師論壇" style="font-size: 9pt; text-decoration: none; font-family: 新細明體; color: rgb(68,102,102)" target="_top" href="/main_3.php?academics/academics_16"><font color="#0000ff">諾貝爾大師論壇</font></a></span></font></p>
+            </td>
+        </tr>
+        <tr style="font-size: 9pt; font-family: Arial, Helvetica, sans-serif; color: rgb(255,255,255)">
+            <td style="font-size: 9pt; font-family: Arial, Helvetica, sans-serif" height="18">
+            <p style="margin-bottom: 0px; margin-left: 10px; margin-top: 0px"><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)"><font color="#008080">&nbsp;&middot;&nbsp;</font></span><a title="校務及財務資訊公開專區" style="font-size: 9pt; text-decoration: none; font-family: 新細明體; color: rgb(68,102,102)" target="_blank" href="http://web.asia.edu.tw/files/13-1000-4829.php"><font color="#008080" face="Arial">財務專區</font></a><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)"><font color="#008080"><font color="#0000ff" face="新細明體">&nbsp;</font>&nbsp;<span style="letter-spacing: -1pt"><font color="#0000ff" face="新細明體">&nbsp;</font></span>&middot;<span style="letter-spacing: -1pt">&nbsp;</span></font></span><a title="跨領域學程" style="font-size: 9pt; text-decoration: none; font-family: 新細明體; color: rgb(68,102,102)" target="_blank" href="http://ac.asia.edu.tw/files/11-1032-2349.php?Lang=zh-tw"><font color="#008080">跨領域學程</font></a><font color="#008080" face="Arial">&nbsp;<span style="letter-spacing: -1pt"><font color="#808080" face="Symbol">&nbsp;</font></span></font><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)"><font color="#008080">&middot;<span style="letter-spacing: -1pt">&nbsp;</span></font></span><a title="中區區域資源整合分享計畫-證照輔導平台" style="font-size: 9pt; text-decoration: none; font-family: 新細明體; color: rgb(68,102,102)" target="_blank" href="http://www.cttlrc.cuemei.com/"><font color="#008080" face="Arial">證照輔導平台</font></a></p>
+            </td>
+        </tr>
+        <tr style="font-size: 9pt; font-family: Arial, Helvetica, sans-serif; color: rgb(255,255,255)">
+            <td style="font-size: 9pt; font-family: Arial, Helvetica, sans-serif" height="18">
+            <p style="margin-bottom: 0px; margin-left: 10px; margin-top: 0px"><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)"><font color="#808080">&nbsp;&middot;&nbsp;</font></span><a title="新生學籍登錄" style="font-size: 9pt; text-decoration: none; font-family: 新細明體; color: rgb(68,102,102); letter-spacing: -0.5pt" target="_blank" href="http://210.60.30.202/stdreg/"><font color="#808080" face="Arial">新生學籍登錄</font></a><font color="#0000ff" face="Symbol"><span style="letter-spacing: -1pt">&nbsp;&nbsp;&nbsp;</span></font><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)"><font color="#808080">&middot;<span style="letter-spacing: -1pt">&nbsp;</span></font></span><span style="letter-spacing: -1pt"><a title="學生資訊系統" style="font-size: 9pt; text-decoration: none; font-family: 新細明體; color: rgb(68,102,102)" target="_blank" href="http://course.asia.edu.tw/"><font color="#808080">學生資訊系統</font></a><font color="#0000ff" face="新細明體">&nbsp;<span style="letter-spacing: -1pt"><font color="#808080" face="Symbol"><span style="letter-spacing: -1pt">&nbsp;</span></font></span></font></span><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)"><font color="#808080">&middot;<span style="letter-spacing: -1pt">&nbsp;</span></font></span><span style="letter-spacing: -0.5pt"><a title="獎助學金" style="font-size: 9pt; text-decoration: none; font-family: 新細明體; color: rgb(68,102,102)" target="_blank" href="main.php?information/information_02"><font color="#808080">獎助學金</font></a></span></p>
+            </td>
+        </tr>
+        <tr style="font-size: 9pt; font-family: Arial, Helvetica, sans-serif; color: rgb(255,255,255)">
+            <td style="font-size: 9pt; font-family: Arial, Helvetica, sans-serif" height="18">
+            <p style="margin-bottom: 0px; margin-left: 10px; margin-top: 0px" align="justify"><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)"><font color="#008080">&nbsp;&middot;&nbsp;</font></span><span style="letter-spacing: -1pt"><a title="校園公告" style="font-size: 9pt; text-decoration: none; font-family: 新細明體; color: rgb(68,102,102)" href="http://www.asia.edu.tw/board.php"><font color="#008080">校園公告</font></a></span><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)"><font color="#008080">&nbsp;&middot;<span style="letter-spacing: -1pt">&nbsp;</span></font></span><a title="活動快訊" style="font-size: 9pt; text-decoration: none; font-family: 新細明體; color: rgb(68,102,102)" href="http://www.asia.edu.tw/activities.php"><font color="#008080">活動快訊</font></a><font color="#808080" face="Symbol"><span style="letter-spacing: -1pt">&nbsp;</span></font><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)"><font color="#008080">&middot;<span style="letter-spacing: -1pt">&nbsp;</span></font></span><span style="letter-spacing: -1pt"><a title="亞洲大學電子報" style="font-size: 9pt; text-decoration: none; font-family: 新細明體; color: rgb(68,102,102)" target="_blank" href="http://enews.asia.edu.tw/"><font color="#008080">電子報</font></a></span><font color="#0000ff" face="Symbol"><span style="letter-spacing: -1pt"><span style="letter-spacing: -1pt">&nbsp;</span></span></font><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)"><font color="#008080">&middot;<span style="letter-spacing: -1pt"><font color="#0000ff" face="新細明體">&nbsp;</font></span></font></span><a title="亞洲大學facebook" style="font-size: 9pt; text-decoration: none; font-family: 新細明體; color: rgb(68,102,102)" target="_blank" href="https://www.facebook.com/pages/%E4%BA%9E%E6%B4%B2%E5%A4%A7%E5%AD%B8Asia-University-Taiwan/201785650801?ref=hl"><font color="#008080" face="Arial"><strong>facebook</strong></font></a></p>
+            </td>
+        </tr>
+        <tr style="font-size: 9pt; font-family: Arial, Helvetica, sans-serif; color: rgb(255,255,255)">
+            <td style="font-size: 9pt; font-family: Arial, Helvetica, sans-serif" height="18">
+            <p style="margin-bottom: 0px; margin-left: 10px; margin-top: 0px"><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)"><font color="#808080">&nbsp;&middot;&nbsp;</font></span><a title="網路大學資源" style="font-size: 9pt; text-decoration: none; font-family: 新細明體; color: rgb(68,102,102)" href="http://www.asia.edu.tw/main.php?resources/resources_17"><font color="#808080"><span style="letter-spacing: -1pt">網路資源</span></font></a><font color="#0000ff" face="Symbol"><span style="letter-spacing: -1pt">&nbsp;</span></font><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)"><font color="#808080">&middot;<span style="letter-spacing: -1pt">&nbsp;</span></font></span><a title="網路郵局" style="font-size: 9pt; text-decoration: none; font-family: 新細明體; color: rgb(68,102,102)" target="_blank" href="http://ms1.asia.edu.tw/"><font color="#808080"><span style="letter-spacing: -1pt">網路郵局</span></font></a><font color="#808080" face="Symbol"><span style="letter-spacing: -1pt">&nbsp;</span></font><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)"><font color="#808080">&middot;<span style="letter-spacing: -1pt">&nbsp;</span></font></span><span style="letter-spacing: -1.5pt"><a title="校園資訊系統入口連結" style="font-size: 9pt; text-decoration: none; font-family: 新細明體; color: rgb(68,102,102)" target="_blank" href="http://cip.asia.edu.tw/"><font color="#808080">校園入口</font></a></span><font color="#0000ff" face="Symbol"><span style="letter-spacing: -1pt">&nbsp;</span></font><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)"><font color="#808080">&middot;<span style="letter-spacing: -1pt"><span style="letter-spacing: -1pt"><font color="#0000ff">&nbsp;</font></span></span></font></span><font style="font-size: 9pt" color="#446666" face="Arial"><a title="新聞總匯" style="font-size: 9pt; text-decoration: none; font-family: 新細明體; color: rgb(68,102,102)" href="http://www.asia.edu.tw/news1.php"><font color="#808080">新聞總匯</font></a></font></p>
+            </td>
+        </tr>
+        <tr style="font-size: 9pt; font-family: Arial, Helvetica, sans-serif; color: rgb(255,255,255)">
+            <td style="font-size: 9pt; font-family: Arial, Helvetica, sans-serif" height="18">
+            <p style="margin-bottom: 0px; margin-left: 10px; margin-top: 0px"><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)"><font color="#008080">&nbsp;&middot;&nbsp;</font></span><a title="亞洲大學圖書館" style="font-size: 9pt; text-decoration: none; font-family: 新細明體; color: rgb(68,102,102)" target="_blank" href="http://library.asia.edu.tw/"><font color="#008080">圖書館</font></a><font color="#0000ff" face="Symbol"><span style="letter-spacing: -1pt">&nbsp;</span></font><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)"><font color="#008080">&middot;<span style="letter-spacing: -1pt">&nbsp;</span></font></span><span style="letter-spacing: -1pt"><a title="教學卓越計劃網站" class="style3" style="font-size: 9pt; text-decoration: none; font-family: 新細明體; color: rgb(68,102,102)" target="_blank" href="http://5i.asia.edu.tw/"><font color="#008080">教卓計畫</font></a></span><font color="#0000ff" face="Symbol"><span style="letter-spacing: -1pt">&nbsp;&nbsp;</span></font><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)"><font color="#008080">&middot;<span style="letter-spacing: -1pt">&nbsp;</span></font></span><a title="亞洲大學自我評鑑專區相關資訊網站" style="font-size: 9pt; text-decoration: none; font-family: 新細明體; color: rgb(68,102,102)" target="_blank" href="http://qae.asia.edu.tw/files/90-1054-1.php"><font color="#008080" face="Arial">評鑑專區</font></a><font color="#0000ff" face="Symbol"><span style="letter-spacing: -1pt">&nbsp;</span></font><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)"><font color="#008080">&middot;<span style="letter-spacing: -1pt"><span style="letter-spacing: -1pt"><font color="#008080"><span style="letter-spacing: -1pt">&nbsp;</span></font></span></span></font></span><span style="letter-spacing: -1pt"><a title="學生學習地圖" style="font-size: 9pt; text-decoration: none; font-family: 新細明體; color: rgb(68,102,102)" target="_blank" href="http://coursemap.asia.edu.tw/"><font color="#008080"> 學習地圖</font></a></span></p>
+            </td>
+        </tr>
+        <tr style="font-size: 9pt; font-family: Arial, Helvetica, sans-serif; color: rgb(255,255,255)">
+            <td style="font-size: 9pt; font-family: Arial, Helvetica, sans-serif" height="18">
+            <p style="margin-bottom: 0px; margin-left: 10px; margin-top: 0px"><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)"><font color="#808080">&nbsp;&middot;&nbsp;</font></span><span lang="zh-tw" style="letter-spacing: -0.5pt"><font color="#446666"><a title="性別平等教育委員會" style="font-size: 9pt; text-decoration: none; font-family: 新細明體; color: rgb(68,102,102)" target="_blank" href="http://myaweb.asia.edu.tw/meworksv2a/meworks/page.aspx?no=30663"><font color="#808080">性平會</font></a></font></span><font color="#0000ff" face="Symbol"><span style="letter-spacing: -1pt">&nbsp;<span style="letter-spacing: -1pt"><font color="#808080">&nbsp;</font></span></span></font><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)"><font color="#808080">&middot;<span style="letter-spacing: -1pt">&nbsp;</span></font></span><span style="letter-spacing: -0.5pt"><font color="#808080"><a title="校安中心" style="font-size: 9pt; text-decoration: none; font-family: 新細明體" target="_blank" href="http://sd.asia.edu.tw/md/index.htm"><font color="#808080">校安中心</font></a></font></span><font color="#0000ff" face="Symbol"><span style="letter-spacing: -1pt">&nbsp;</span></font><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)"><font color="#808080">&middot;&nbsp;</font></span><a title="學習暨生涯發展中心" style="font-size: 9pt; text-decoration: none; font-family: 新細明體; color: rgb(68,102,102); letter-spacing: -0.5pt" target="_blank" href="http://cdec.asia.edu.tw/"><font color="#808080">學習暨生涯發展中心</font></a></p>
+            </td>
+        </tr>
+        <tr style="font-size: 9pt; font-family: Arial, Helvetica, sans-serif; color: rgb(255,255,255)">
+            <td style="font-size: 9pt; font-family: Arial, Helvetica, sans-serif" height="18">
+            <p style="margin-bottom: 0px; margin-left: 10px; margin-top: 0px"><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)"><font color="#008080">&nbsp;&middot;&nbsp;<span lang="zh-tw" style="letter-spacing: -0.5pt"><a title="重要連結" style="font-size: 9pt; text-decoration: none; font-family: 新細明體" href="http://www.asia.edu.tw/main.php?information/information_07"><font color="#008080">重要連結</font></a></span></font></span><font color="#0000ff" face="Symbol"><span style="letter-spacing: -1pt">&nbsp;&nbsp;&nbsp;</span></font><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)"><font color="#008080">&middot;<span style="letter-spacing: -1pt">&nbsp;</span></font></span><font color="#446666"><a title="學生守護緊急電話" style="font-size: 9pt; text-decoration: none; font-family: 新細明體; color: rgb(68,102,102)" href="http://www.asia.edu.tw/main_1.php?information/information_08"><font style="font-size: 9pt" color="#008080">緊急電話</font></a></font><font color="#0000ff" face="新細明體">&nbsp;<span style="letter-spacing: -1pt"><font face="Symbol">&nbsp;&nbsp;</font></span></font><span class="style3" style="font-family: Symbol; color: rgb(68,102,102)"><font color="#008080">&middot;<span style="letter-spacing: -1pt">&nbsp;</span></font></span><a title="來校訪問交通資訊與校園內部景緻導覽" style="font-size: 9pt; text-decoration: none; font-family: 新細明體; color: rgb(68,102,102)" href="http://www.asia.edu.tw/main_4.php?yard_tour/campus_map"><font color="#008080">校園交通與導覽</font></a></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>    </td>
+  </tr>
+</table>
+</div>
+</p>
+        <p style="margin-top: 25px; margin-bottom: 0">
+<div align="center">
+  <table width="220" border="0" cellpadding="0" cellspacing="0" summary="*" height="">
+    <tr>
+      <td height="75%" width="100%"><p style="margin-top: 0px; margin-bottom: 0px; margin-left:-12px" align="center">
+          <!--iframe name="I2" src="http://www.asia.edu.tw/Main_Pages/Bottom_left_page_images/index.html" marginwidth="1" marginheight="1" height="186" width="186" scrolling="no" align="center" border="0" frameborder="0"> 您的瀏覽器不支援內置框架或目前的設定為不顯示內置框架。</iframe-->
+          <div id='slider' align="center">
+	<div id="SliderName8">
+			<a href="http://www.asia.edu.tw/main_1.php?yard/artworks_details" target="_blank">		<img src="upload/pics/1/2014072616423194.jpg" title="海豚上的娜娜" alt="海豚上的娜娜" border="0" width="180" height="180">
+		</a>  		<a href="http://nobel.asia.edu.tw/" target="_blank">		<img src="upload/pics/1/2014111315285754.jpg" title="Nobel_laureate_Dr_Hansen" alt="Nobel_laureate_Dr_Hansen" border="0" width="180" height="180">
+		</a>  		<a href="http://nobel.asia.edu.tw/" target="_blank">		<img src="upload/pics/1/00_98_Dr_T_Sargent.jpg" title="Nobel Laureate Dr. C. A. Pissarides" alt="Nobel Laureate Dr. C. A. Pissarides" border="0" width="180" height="180">
+		</a>  		<a href="http://nobel.asia.edu.tw/" target="_blank">		<img src="upload/pics/1/00_98_Dr_C_A_Sims.jpg" title="Nobel Laureate Dr. C. A. Pissarides" alt="Nobel Laureate Dr. C. A. Pissarides" border="0" width="180" height="180">
+		</a>  		<a href="http://www.asia.edu.tw/main_1.php?yard/artworks_details" target="_blank">		<img src="upload/pics/1/18_Young_14_year-old_Dancer_by_Degas.jpg" title="14歲芭蕾舞者(竇加)" alt="14歲芭蕾舞者(竇加)" border="0" width="180" height="180">
+		</a>  		<a href="http://www.asia.edu.tw/main_1.php?yard/artworks_details" target="_blank">		<img src="upload/pics/1/17_Eternal_Spring_by_Rodin.jpg" title="永恆的春天(羅丹)" alt="永恆的春天(羅丹)" border="0" width="180" height="180">
+		</a>  		<a href="http://www.asia.edu.tw/main_1.php?yard/artworks_details" target="_blank">		<img src="upload/pics/1/16_Poem_of_Victoria__by_Arman.jpg" title="勝利女神的詩篇(阿曼)" alt="勝利女神的詩篇(阿曼)" border="0" width="180" height="180">
+		</a>  		<a href="http://www.asia.edu.tw/main_1.php?yard/artworks_details" target="_blank">		<img src="upload/pics/1/15_L'elephant_&_Instruments_by_Arman.jpg" title="大象與樂器的結合(阿曼)" alt="大象與樂器的結合(阿曼)" border="0" width="180" height="180">
+		</a>  		<a href="http://www.asia.edu.tw/main_1.php?yard/artworks_details" target="_blank">		<img src="upload/pics/1/14_Venus_au_Violoncelle_bois_by_Arman.png" title="大提琴與維納斯的結合(阿曼)" alt="大提琴與維納斯的結合(阿曼)" border="0" width="180" height="180">
+		</a>  		<a href="http://www.asia.edu.tw/main_1.php?yard/artworks_details" target="_blank">		<img src="upload/pics/1/13_The_Thinker_by_Rodin.jpg" title="沉思者(羅丹)" alt="沉思者(羅丹)" border="0" width="180" height="180">
+		</a>  		<a href="http://www.asia.edu.tw/main_1.php?yard/artworks_details" target="_blank">		<img src="upload/pics/1/12_Teen_age.jpg" title="花樣年華(余燈銓)" alt="花樣年華(余燈銓)" border="0" width="180" height="180">
+		</a>  		<a href="http://www.asia.edu.tw/main_1.php?yard/artworks_details" target="_blank">		<img src="upload/pics/1/11_Pheonix_in_the_Air.jpg" title="鳳凌霄漢(楊英風)" alt="鳳凌霄漢(楊英風)" border="0" width="180" height="180">
+		</a>  		<a href="http://www.asia.edu.tw/main_1.php?yard/artworks_details" target="_blank">		<img src="upload/pics/1/10_Pheonix_Comes.jpg" title="鳳凰來儀(楊英風)" alt="鳳凰來儀(楊英風)" border="0" width="180" height="180">
+		</a>  		<a href="http://www.asia.edu.tw/main_1.php?yard/artworks_details" target="_blank">		<img src="upload/pics/1/09_Happy_Island.jpg" title="在快樂之島(陳尚平)" alt="在快樂之島(陳尚平)" border="0" width="180" height="180">
+		</a>  		<a href="http://www.asia.edu.tw/main_1.php?yard/artworks_details" target="_blank">		<img src="upload/pics/1/08_Family_Happiness.jpg" title="闔家如意(陳齊川)" alt="闔家如意(陳齊川)" border="0" width="180" height="180">
+		</a>  		<a href="http://www.asia.edu.tw/main_1.php?yard/artworks_details" target="_blank">		<img src="upload/pics/1/07_Founder_Lin_Statue.jpg" title="創辦人林增連紀念雕像(余燈銓)" alt="創辦人林增連紀念雕像(余燈銓)" border="0" width="180" height="180">
+		</a>  		<a href="http://www.asia.edu.tw/main_1.php?yard/artworks_details" target="_blank">		<img src="upload/pics/1/19_Ring%20Password_by_Tsu-Ching_Lee.JPG" title="創辦人林增連紀念雕像(余燈銓)" alt="創辦人林增連紀念雕像(余燈銓)" border="0" width="180" height="180">
+		</a>  		<a href="http://nobel.asia.edu.tw/" target="_blank">		<img src="upload/pics/1/06_Dr_P_A_Diamond.jpg" title="Nobel Laureate Dr. P. A. Diamond" alt="Nobel Laureate Dr. P. A. Diamond" border="0" width="180" height="180">
+		</a>  		<a href="http://nobel.asia.edu.tw/" target="_blank">		<img src="upload/pics/1/05_Dr_O_E_Williamson.jpg" title="Nobel Laureate Dr. O. E. Williamson" alt="Nobel Laureate Dr. O. E. Williamson" border="0" width="180" height="180">
+		</a>  		<a href="http://nobel.asia.edu.tw/" target="_blank">		<img src="upload/pics/1/04_Dr_F_Murad.jpg" title="Nobel Laureate Dr. F. Murad" alt="Nobel Laureate Dr. F. Murad" border="0" width="180" height="180">
+		</a>  		<a href="http://nobel.asia.edu.tw/" target="_blank">		<img src="upload/pics/1/03_Dr_E_Ostrom.jpg" title="Nobel Laureate Dr. E. Ostrom" alt="Nobel Laureate Dr. E. Ostrom" border="0" width="180" height="180">
+		</a>  		<a href="http://nobel.asia.edu.tw/" target="_blank">		<img src="upload/pics/1/02_Dr_D_T_Mortensen.jpg" title="Nobel Laureate Dr. D. T. Mortensen" alt="Nobel Laureate Dr. D. T. Mortensen" border="0" width="180" height="180">
+		</a>  		<a href="http://nobel.asia.edu.tw/" target="_blank">		<img src="upload/pics/1/01_Dr_C_A_Pissarides.jpg" title="Nobel Laureate Dr. C. A. Pissarides" alt="Nobel Laureate Dr. C. A. Pissarides" border="0" width="180" height="180">
+		</a>    </div>
+</div>
+<script type="text/javascript">
+	demo3Effect1 = {name: 'myEffect31', top: true, move: true, duration: 1000}; 
+	demo3Effect2 = {name: 'myEffect32', right: true, move: true, duration: 1000}; 
+	demo3Effect3 = {name: 'myEffect33', bottom: true, move: true, duration: 1000}; 
+	demo3Effect4 = {name: 'myEffect34', left: true, move: true, duration: 1000}; 
+	demo3Effect5 = {name: 'myEffect35', rows: 3, cols: 9, delay: 50, duration: 100, order: 'random', fade: true}; 
+	demo3Effect6 = {name: 'myEffect36', rows: 2, cols: 4, delay: 100, duration: 100, order: 'random', fade: true, chess: true}; 
+	effectsDemo3 = [demo3Effect1,demo3Effect2,demo3Effect3,demo3Effect4,demo3Effect5,demo3Effect6,'blinds'];
+	var demoSlider = Sliderman.slider({container: 'SliderName8', width: 180, height: 180, effects: effectsDemo3, display: {pause: true, autoplay: 5000}});
+</script>
+        </p></td>
+    </tr>
+    <tr>
+      <td align="center" valign="bottom"><p style="margin-top: 0px; margin-bottom:0; margin-left:-10px"> <span class="style1" style="border-style: solid; border-width: 0px; color:#008080;">亞洲大學校園活動與藝雕</span> </p></td>
+    </tr>
+  </table>
+  <table width="220" border="0" cellpadding="0" cellspacing="0" summary="*" height="">
+    <tr>
+      <td align="center"><form method="get" action="http://www.google.com/search" target="_blank">
+          <p style="margin-top: 24px; margin-bottom: 4px; margin-left:-10px">
+            <input type="text" name="q" size="11" align="absmiddle" value="" style="border:1px solid #FFFFFF; height: 20; font-size:10pt; color:#333333; position:relative; background-color:#E3E3E3; padding-left:1px; padding-right:1px; padding-top:1px; padding-bottom:1px">
+            <input type="hidden" value="utf8" name="ie">
+            <font size="1" face="Arial"><span style="font-size: 7pt">
+            <input type=submit name=sa value="Go" style="font-family: Arial; color: #008080; font-size:8pt">
+            </span></font>
+            <input type="hidden" name="sitesearch" value="asia.edu.tw">
+          </p>
+        </form>
+        <p style="margin-top: 13px; margin-bottom: 0px"> <font face="Arial Unicode MS" color="#669999" style="font-size: 7pt"> <span style="vertical-align: super">You are No.</span>
+          <span style="vertical-align: super; background-color:#EEE;font-family:Arial, 'Times New Roman', Times, serif; font-weight:bold;font-size:8pt;">&nbsp;
+					32,494,151&nbsp;</span>
+          <span style="vertical-align: super">visitor</span></font> </td>
+    </tr>
+    <tr>
+      <td align="center" width="220" style="vertical-align: medium"><p style="margin-top: -2px; margin-bottom: -2px; margin-left:-10px"> &nbsp; </td>
+    </tr>
+    <tr>
+      <td align="center"><p style="margin-top: 1px; margin-bottom: 1px; margin-left:-10px"> <font face="Arial" color="#669999" style="font-size: 7pt"> Copyright &copy; 2013 Asia University</font><span style="font-size: 7pt"> </span> </p></td>
+    </tr>
+  </table>
+  
+</div>
+</p>
+      </td>
+    </tr>
+  </table>
+  <a href="http://www2.asia.edu.tw" title="亞洲大學全球資訊網"> </a>
+  <a href="http://web.asia.edu.tw" title="亞洲大學全球資訊網"> </a>
+  </div>
+</body>
+
+<!-- popup news -->
+<script type="text/javascript" src="http://web.asia.edu.tw/ezfiles/0/1000/img/77/shadowbox.js"></script>
+<link rel="stylesheet" type="text/css" href="http://web.asia.edu.tw/ezfiles/0/1000/img/77/shadowbox.css">
+<script type="text/javascript">
+/*window.onload = function(){ 
+	Shadowbox.init({ 
+	players:['html'] 
+	}); 
+	Shadowbox.open({ 
+	player:'html', 
+	title:'亞洲公告', 
+	content:'<table width="100%"><tr><th align="left"><span style="color:#ff8c00; font-size:14px;">2013-07-30</span><br/><a href="102pop3.pdf" target="_blank" style="color:#404040; font-size:14px;">新生入學獎學金，最高360萬</a></th></tr></table>', 
+	height:70,
+	width:500
+	});
+};*/
+</script>
+<!-- popup news -->
+</html>
