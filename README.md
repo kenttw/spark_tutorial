@@ -70,10 +70,17 @@ https://github.com/spark-mooc
 3. AnalysisArticle_HTML
    - Practice HTML related tools
      - **urlparse**, **lxml.html**, **xpath**
-   - Write code to sort img source netloc in several articles.
+   - Write code to sort img source netloc in several articles
 
-4. 
+4. AnalysisArticle_Content
+   - Practice use BeautifulSoup to parse webpage
+   - Practice use Jieba to splite Chinese word
+   - Try to print significant word in WordCloud
 
+5. Classification - Article_Content
+   - Use BeautifulSoup and Jieba to do article preprocess
+   - First know about MLlib with SparseVector and LabeledPoint
+   - Try MLlib NaiveBayes to build a simple article type classifier
 
 
 ### How to set up IPython Notebook to work smoothly with PySpark?
