@@ -31,6 +31,13 @@
   git clone https://github.com/texib/spark_tutorial.git
   wget https://github.com/l10n-tw/cwtex-q-fonts-TTFs/raw/master/ttf/cwTeXQFangsong-Medium.ttf
   ```
+- If `pip` command has some problems amount this steps
+  
+  ``` shell
+  sudo apt-get remove python-pip
+  sudo easy_install pip
+  sudo ln -s /usr/local/bin/pip /usr/bin/pip
+  ```
   
 - Open IPython Notebook in browser — `http://localhost:8001/tree`
   
