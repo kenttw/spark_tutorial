@@ -30,6 +30,8 @@
   sudo apt-get install git
   git clone https://github.com/texib/spark_tutorial.git
   wget https://github.com/l10n-tw/cwtex-q-fonts-TTFs/raw/master/ttf/cwTeXQFangsong-Medium.ttf
+  sudo pip uninstall numpy
+  sudo pip install numpy == 1.9.2 #Bug in MLlib, need version 1.9.2
   ```
 - If `pip` command has some problems amount this steps
   
