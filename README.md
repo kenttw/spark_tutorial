@@ -5,6 +5,11 @@
 ### How to Get Started?
 
 - Install VirtualBox & Vagrant
+  - For Mac OS
+  <pre><code>
+  brew cask install virtualbox
+  brew cask install vagrant
+  </code><pre>
   
 - Download PySpark Mooc Environment
   
