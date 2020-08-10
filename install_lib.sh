@@ -15,4 +15,4 @@ sudo apt-get remove python-pip
 sudo easy_install pip
 sudo ln -s /usr/local/bin/pip /usr/bin/pip
 sudo pip uninstall numpy
-sudo pip install numpy == 1.9.2 #Bug in MLlib, need version 1.9.2
+sudo pip install numpy==1.9.2 #Bug in MLlib, need version 1.9.2
