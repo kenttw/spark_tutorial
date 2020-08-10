@@ -23,7 +23,7 @@
   
 - Install additional packages
   
-  ``` shell
+ ``` shell
 sudo apt-get update
 sudo apt-get install git
 git clone https://github.com/texib/spark_tutorial.git
@@ -39,7 +39,7 @@ sudo pip install gensim
 sudo apt-get python-matplotlib
 sudo pip uninstall numpy
 sudo pip install numpy == 1.9.2 #Bug in MLlib, need version 1.9.2
-  ```
+ ```
 - If `pip` command has some problems amount this steps
   
   ``` shell
