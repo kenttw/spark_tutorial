@@ -10,6 +10,6 @@ sudo apt-get install python-imaging
 wget https://github.com/l10n-tw/cwtex-q-fonts-TTFs/raw/master/ttf/cwTeXQFangsong-Medium.ttf
 sudo apt-get install python-numpy python-scipy
 sudo pip install gensim
-sudo apt-get python-matplotlib
+sudo apt-get install python-matplotlib
 sudo pip uninstall numpy
 sudo pip install numpy == 1.9.2 #Bug in MLlib, need version 1.9.2
