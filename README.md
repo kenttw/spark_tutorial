@@ -24,19 +24,21 @@
 - Install additional packages
   
   ``` shell
-  sudo apt-get update
-  sudo apt-get install libxml2-dev libxslt1-dev
-  sudo apt-get install python-lxml
-  sudo apt-get install python-scipy
-  sudo pip install BeautifulSoup4
-  sudo pip install jieba
-  sudo pip install wordcloud
-  sudo pip install gensim
-  sudo apt-get install git
-  git clone https://github.com/texib/spark_tutorial.git
-  wget https://github.com/l10n-tw/cwtex-q-fonts-TTFs/raw/master/ttf/cwTeXQFangsong-Medium.ttf
-  sudo pip uninstall numpy
-  sudo pip install numpy == 1.9.2 #Bug in MLlib, need version 1.9.2
+sudo apt-get update
+sudo apt-get install git
+git clone https://github.com/texib/spark_tutorial.git
+sudo apt-get install libxml2-dev libxslt1-dev python-dev
+sudo apt-get install python-lxml
+sudo pip install BeautifulSoup4
+sudo pip install jieba
+sudo pip install wordcloud
+sudo apt-get install python-imaging
+wget https://github.com/l10n-tw/cwtex-q-fonts-TTFs/raw/master/ttf/cwTeXQFangsong-Medium.ttf
+sudo apt-get install python-numpy python-scipy
+sudo pip install gensim
+sudo apt-get python-matplotlib
+sudo pip uninstall numpy
+sudo pip install numpy == 1.9.2 #Bug in MLlib, need version 1.9.2
   ```
 - If `pip` command has some problems amount this steps
   
